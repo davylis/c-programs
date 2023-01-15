@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main(void){
 	int number;
-	printf("Enter a number bigger than 10:");
+	printf("Enter a number bigger than 11:");
 	scanf("%d", &number);
-	if (number >10){	
+	if (number >11){	
 	
 		printf("The number was: %d\n",number);
 	}else{
