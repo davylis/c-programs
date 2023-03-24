@@ -8,4 +8,3 @@ Everything required for creating the program can be found in the example program
 
 Example output:
 Hello everybody!
-
