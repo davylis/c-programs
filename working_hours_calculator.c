@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void total_sum(float h[]);
-void average ();
-void entered ();
+void total_sum(float h[], int size);
+void average (float h[], int size);
+void entered (float h[], int size);
 
 int main (){
     int days;
@@ -17,24 +17,40 @@ int main (){
     printf("Enter the working hours for day %d:", i);
     scanf("%f", &hours[i-1]);
     }
+    total_sum(hours, days);
+    average(hours, days);
+    entered(hours, days);
 
-    //Enter workinkg hours(index+array)
-    //sum of working hours (+)
-    //average of hours(do-while)
-    //hours entered (a, b, c)
     return 0;
 }
-    void total_sum(float hours[]) {
-        float sum;
-        float hours[sum];
-        float i;
-        for (i=0;i<=sum;i++){
-        printf("Total hours worked: %.2f", i);
-        scanf("%f", &time[i+1]);
-        }
-        return 0
+
+void total_sum(float h[], int size) {
+    float sum =0 ;
+    int i;
+    for (i=0;i<size;i++)
+    {
+     sum = h[i] + sum;
+    }
+    printf("Total hours worked: %.1f\n", sum);
+}
+
+void average(float h[], int size) {
+    float sum = 0;
+    for (int i=0;i<size;i++)
+    {
+    sum = h[i] + sum;
     }
 
-void average()
+     sum = sum / size;
+    printf("Average length of day: %.1f\n", sum);
+}
 
-void entered()
+void entered(float h[], int size) {
+
+    printf ("Hours entered:");
+    for (int i=0;i<size;i++)
+    {
+     printf(" %.1f", h[i]);
+    }
+
+}
