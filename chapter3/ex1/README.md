@@ -6,4 +6,4 @@ Enter an integer: 14
 Enter a decimal number:3.123
 
 You entered the integer: 14
-You entered the decimal number, 
+You entered the decimal number, rounded to two decimal places: 3.12
