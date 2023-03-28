@@ -4,9 +4,10 @@ void total_sum_and_average(float h[], int size);
 void entered (float h[], int size);
 
 int main (){
+    int days;
     float hours[days];
     int i;
-    int days;
+    
 
     printf("The program calculates the total hours worked during"
     "a specific period and the average length of a day.\n\n");
