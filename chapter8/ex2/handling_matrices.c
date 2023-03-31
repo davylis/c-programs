@@ -10,9 +10,27 @@ int main()
         {98, 585, 12, 63, 21},
         {45, 35, 9, 5, 1}
     };
-    int sum, i, j;
-    for
-    for
+    int sum=0;
+    int i, j;
+
+    printf("In the array:\n");
+
+    for(i=0; i<5; i++)
+    {
+        for(j=0; j<5; j++)
+        {
+            sum = sum + matrix[i][j];
+                if(j==4)
+                { printf("%d\n", matrix[i][j]);
+                }
+                else
+                { printf("%d ", matrix[i][j]);
+                }
+        }
+    }
+
+
+        printf("\n\nthe sum of the elements is %d\n", sum);
     return 0;
 
 }
