@@ -2,16 +2,21 @@
 
 int main()
 {
-    int matrix1[3]= {1, 2, 3};
+    int matrix1[3]= {134, 267, 37};
 
     int matrix2[3];
 
-    int sum=0;
-    int x, y;
+    int x=0, y;
 
-    for (int y=2; x>0; x--)
+    for (int y=2; y>=0; y--)
     {
-        printf("%d", matrix1[y]);
+        matrix2[x] = matrix1[y];
+        x++;
+    }
+
+    for (int i=0; i<=2; i++)
+    {
+        printf("%d %d\n", matrix2[i], matrix1[i]);
     }
 
 return 0;
