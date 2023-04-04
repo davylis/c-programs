@@ -2,21 +2,30 @@
 
 int main()
 {
-    int matrix1[][]= {};
+    int matrix1[2][2]= {1, 2,
+                        3, 4 };
 
-    int matrix2[][];
+    int matrix2[2][2];
 
     int x=0, y;
+    int a=0, b;
 
-    for (int y=2; y>=0; y--)
+    for (int y=4; y>=0; y--)
     {
-        matrix2[x] = matrix1[y];
+        for (int a=4; a>=0; a--)
+        {
+        matrix2[x][a] = matrix1[y][b];
         x++;
+        a++;
+        }
     }
 
-    for (int i=0; i<=2; i++)
+    for (int i=0; i<=4; i++)
     {
-        printf("%d %d\n", matrix2[i], matrix1[i]);
+        for (int j=0; j<=4; j++)
+        {
+        printf("%d %d\n", matrix2[i][j], matrix1[i][j]);
+        }
     }
 
 return 0;
