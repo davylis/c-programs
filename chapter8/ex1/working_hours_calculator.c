@@ -5,7 +5,6 @@ void entered (float h[], int size);
 
 int main (){
     int days;
-    float hours[days];
     int i;
     
 
@@ -14,6 +13,7 @@ int main (){
 
     printf("How many days:");
     scanf("%d", &days);
+    float hours[days];
     
     for (i=1;i<=days;i++){
         printf("Enter the working hours for day %d:", i);
