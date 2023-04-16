@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-#define SIZE_X 3
-#define SIZE_Y 2
+#define SIZE 3
 
+#if 1
 int main()
 {
-    int matrix1[3][3][3] = {
+    int matrix1[SIZE][SIZE][SIZE] = {
                         {
                             {1, 2, 3},
                             {3, 4, 6},
@@ -24,17 +24,17 @@ int main()
                         }
                     };
 
-    int matrix2[3][3][3];
+    int matrix2[SIZE][SIZE][SIZE];
 
     int x=0, y;
     int a=0, b;
     int o=0, h;
 
-    for (int y=1; y>=0; y--)
+    for (int y=2; y>=0; y--)
     {
         for (int b=2; b>=0; b--)
         {
-            for(int h=3; h>=0; h--)
+            for(int h=2; h>=0; h--)
         
             {
                 matrix2[x][a][o] = matrix1[y][b][h];
@@ -47,11 +47,11 @@ int main()
         x++; // !!
     }
     // comments!!!!
-    for (int i=0; i < 2; i++)
+    for (int i=0; i < 3; i++)
     {
         for (int j=0; j < 3; j++)
         {
-            for(int l=0; l < 4; l++)
+            for(int l=0; l < 3; l++)
             {
                 printf("%d %d\n", matrix2[i][j][l], matrix1[i][j][l]);
             }
@@ -61,3 +61,5 @@ int main()
 return 0;
 
 }
+
+#endif
